@@ -1,0 +1,23 @@
+// Notes de cours
+
+/*
+    Git & GitHub sont indispensables dans le développement et si l'on veut travailler en entreprise et en équipe notamment. Il est possible de placer via Git des projets/dossier en distant sur GitHub qui ne relève pas forcémment du développement d'ailleurs (changements d'images et de documents).
+
+    - Git : logiciel de gestion/version de fichier créé par le fondateur de LINUX. On stocke les version de notre projet en local
+    - GitHub : site de service complémentaire à Git, il stocke/héberge en ligne, en public et en distant. Ce service a été racheté par le PDG de Microsoft en 2018.
+
+    Pour utiliser les deux il faut un ordinateur avec une connexion internet, c'est un petit plus de connaître le HTML pour en utiliser tout le potentiel.
+
+    Git s'installe à l'aide de son site officiel 'git-scm.com/downloads'.
+    Il faut ensuite l'utiliser dans le Terminal (ligne de commande, origine moins intuitive des ordinateurs). Le terminal permettait sans fonctionnalités de créer, déplacer, supprimer et modifier un dossier ou un type de fichier.
+
+    Liste de commandes :
+    pwd, ls, cd, touch, etc.
+    clear (pour nettoyer le Terminal)
+
+    git --version (vérifier installation et version de Git sur son ordinateur)
+    git init (initialiser un dépôt en local, à faire dans un dossier)
+    git status (voir le statut de nos fichiers)
+    git add -A (ajouter tous les fichiers en cours de versionnage)
+
+*/

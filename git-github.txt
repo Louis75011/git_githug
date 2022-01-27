@@ -14,10 +14,22 @@
     Liste de commandes :
     pwd, ls, cd, touch, etc.
     clear (pour nettoyer le Terminal)
+    :wq! (write et quitter de force le programme immédiatement)
 
-    git --version (vérifier installation et version de Git sur son ordinateur)
-    git init (initialiser un dépôt en local, à faire dans un dossier)
-    git status (voir le statut de nos fichiers)
-    git add -A (ajouter tous les fichiers en cours de versionnage)
+    git --version (vérifier installation et version de Git sur son ordinateur).
+    git init (initialiser un dépôt en local, à faire dans un dossier).
+    git status (voir le statut de nos fichiers).
+    git add -A (ajouter tous les fichiers en cours de versionnage).
+    git commit -m "" (enregistrement de version, crée chaînes de caractère "chat" propre au commit", mettre nom entre guillemets).
+    git log (liste des commits, on voit autheur, mail, date, numéro de commit - on consulte l'historique des modifications)
+    git commit --amend (pour ammender un commit passé)
+    git --help (affiche toutes les commandes existantes)
+    
+    GitHub :
+    Vous avez plusieurs offres, celle gratuite est largement suffisante, mais ne permet de stocker que 500mgb au total.
 
+    Associer dépôt local au dépôt distant (après init, commit) :
+    git branch -M main
+    git remote add origin git@github.com:Louis75011/git_githug.git
+    git push -u origin main
 */

@@ -1,7 +1,7 @@
 // Notes de cours
 
 /*
-    Git & GitHub sont indispensables dans le développement et si l'on veut travailler en entreprise et en équipe notamment. Il est possible de placer via Git des projets/dossier en distant sur GitHub qui ne relève pas forcémment du développement d'ailleurs (changements d'images et de documents).
+    Git & GitHub sont indispensables dans le développement et si l'on veut travailler en ENTREPRISE et en ÉQUIPE notamment. Il est possible de placer via Git des projets/dossier en distant sur GitHub qui ne relève pas forcémment du développement d'ailleurs (changements d'images et de documents).
 
     - Git : logiciel de gestion/version de fichier créé par le fondateur de LINUX. On stocke les version de notre projet en local
     - GitHub : site de service complémentaire à Git, il stocke/héberge en ligne, en public et en distant. Ce service a été racheté par le PDG de Microsoft en 2018.
@@ -16,25 +16,25 @@
     clear (pour nettoyer le Terminal)
     :wq! (write et quitter de force le programme immédiatement)
 
-    git --version (vérifier installation et version de Git sur son ordinateur).
-    git init (initialiser un dépôt en local, à faire dans un dossier).
-    git status (voir le statut de nos fichiers).
-    git add -A (ajouter tous les fichiers en cours de versionnage).
-    git commit -m "" (enregistrement de version, crée chaînes de caractère "chat" propre au commit", mettre nom entre guillemets).
-    git log (liste des commits, on voit autheur, mail, date, numéro de commit - on consulte l'historique des modifications)
-    git commit --amend (pour ammender un commit passé)
-    git --help (affiche toutes les commandes existantes)
+    $git --version (vérifier installation et version de Git sur son ordinateur).
+    $git init (initialiser un dépôt en local, à faire dans un dossier).
+    $git status (voir le statut de nos fichiers).
+    $git add -A (ajouter tous les fichiers en cours de versionnage).
+    $git commit -m "" (enregistrement de version, crée chaînes de caractère "chat" $propre au commit", mettre nom entre guillemets).
+    $git log (liste des commits, on voit autheur, mail, date, numéro de commit - on consulte l'historique des modifications)
+    $git commit --amend (pour ammender un commit passé)
+    $git --help (affiche toutes les commandes existantes)
     
     GitHub :
     Vous avez plusieurs offres, celle gratuite est largement suffisante, mais ne permet de stocker que 500mgb au total.
 
     Associer dépôt local au dépôt distant (après init, commit) :
-    git branch -M main
-    git remote add origin git@github.com:Louis75011/git_githug.git
-    git push -u origin main
+    $git branch -M main
+    $git remote add origin git@github.com:Louis75011/git_githug.git
+    $git push -u origin main
 
     Si vous faites une modification manuelle sur votre dossier gitHub, pour éviter tout conflit, pensez à mettre à jour le dossier local par rapport au distant via cette commande :
-    git pull
+    $git pull
 
     VScode détecte toutes modifications de fichiers et changements en interne. Dans son onglet Code Source Git, vous pouvez "add" un fichier avec le +, et faire le commit en mettant un titre dans le cadre puis en cliquant sur "V" valider.
     Dans les trois petits points nous avons pleins de sélection, il est possible de travailler sans connaître les lignes de commande (on peut par exemple annuler la dernière validation de commit).
@@ -43,19 +43,27 @@
     Votre code est le tron de l'arbre. Le but est de séparé les fonctionnalités (panier d'achat, fonction commentaires, etc.) crées en les mettant sur certaines branches.
 
     Si la branche master/main a une *, c'est que je suis dessus
-    git branch (liste des branches)
-    git branch avis (créer la branche avis)
-    git checkout avis (on bascule sur la branche avis)
+    $git branch (liste des branches)
+    $git branch avis (créer la branche avis)
+    $git checkout avis (on bascule sur la branche avis)
 
     Dans VS code, la barre bleue du bas, tout en bas à gauche, permet de basculer sur les branches en deux clics encore.
 
     Pour pusher sur notre nouvelle branche,
-    git push -u origin avis
-    git revert HEAD (créer un nouveau commit sur la branche actuelle qui annule tout du commit précédent)
+    $git push -u origin avis
+    $git revert HEAD (créer un nouveau commit sur la branche actuelle qui annule tout du commit précédent)
 
     Fusionner :
     Certaines branches ont des commit en commun, une branche plus en retard peut rejoindre la branche la plus avancée pour être à jour (fast forward). Autrement, s'il y a plus de changements que prévues il faut faire la "fusion à 3 sources".
     
-    git checkout avis (être sur la branche la plus avancée)
+    $git checkout main (être sur la branche à actualiser)
+    $git merge avis (merger/fusionner la branche main avec la branche la plus avancée : avis)
+    $git branch -d avis (ancienne branche inutile est à enlever)
+    $git push origin --delete avis (supprimer également en distant sur GitHub)
 
+    Git rebase :
+    Transférer les changements d'une branche à une autre (similaire à la fusion) tout en changeant la base de notre branche, d'un commit à l'autre.
+    Utile car cela permet de garder un historique intelligible avant de publier sur GH.
+
+    Une fois "rebase" nos "commits" ils ne doivent plus être "pushés" pour éviter de passer la journée à résoudre des conflits de "repository".
 */

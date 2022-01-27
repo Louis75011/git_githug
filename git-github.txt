@@ -48,4 +48,14 @@
     git checkout avis (on bascule sur la branche avis)
 
     Dans VS code, la barre bleue du bas, tout en bas à gauche, permet de basculer sur les branches en deux clics encore.
+
+    Pour pusher sur notre nouvelle branche,
+    git push -u origin avis
+    git revert HEAD (créer un nouveau commit sur la branche actuelle qui annule tout du commit précédent)
+
+    Fusionner :
+    Certaines branches ont des commit en commun, une branche plus en retard peut rejoindre la branche la plus avancée pour être à jour (fast forward). Autrement, s'il y a plus de changements que prévues il faut faire la "fusion à 3 sources".
+    
+    git checkout avis (être sur la branche la plus avancée)
+
 */

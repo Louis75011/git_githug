@@ -1,6 +1,8 @@
 # PUSH WITH GIT/GITHUB
 ## AND VSCODE, TERMINAL...
 
+### LEARN TO WORK WITH A TEAM IN A FIRM
+
 * Commandes
 * Concepts
 

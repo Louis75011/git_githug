@@ -32,4 +32,20 @@
     git branch -M main
     git remote add origin git@github.com:Louis75011/git_githug.git
     git push -u origin main
+
+    Si vous faites une modification manuelle sur votre dossier gitHub, pour éviter tout conflit, pensez à mettre à jour le dossier local par rapport au distant via cette commande :
+    git pull
+
+    VScode détecte toutes modifications de fichiers et changements en interne. Dans son onglet Code Source Git, vous pouvez "add" un fichier avec le +, et faire le commit en mettant un titre dans le cadre puis en cliquant sur "V" valider.
+    Dans les trois petits points nous avons pleins de sélection, il est possible de travailler sans connaître les lignes de commande (on peut par exemple annuler la dernière validation de commit).
+
+    Comment utiliser les branches :
+    Votre code est le tron de l'arbre. Le but est de séparé les fonctionnalités (panier d'achat, fonction commentaires, etc.) crées en les mettant sur certaines branches.
+
+    Si la branche master/main a une *, c'est que je suis dessus
+    git branch (liste des branches)
+    git branch avis (créer la branche avis)
+    git checkout avis (on bascule sur la branche avis)
+
+    Dans VS code, la barre bleue du bas, tout en bas à gauche, permet de basculer sur les branches en deux clics encore.
 */
